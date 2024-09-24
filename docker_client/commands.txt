@@ -1,0 +1,21 @@
+docker ps
+
+#Runds create and start
+docker run [image name]
+
+docker start [id]
+docker stop [id]
+
+docker logs [id]
+
+docker inspect [id]
+
+docker exec -it [id] [command]
+
+# To build an image
+
+docker build -t sikora/[name] .
+
+# To disable to Buildkit
+
+DOCKER_BUILDKIT=0 docker build .

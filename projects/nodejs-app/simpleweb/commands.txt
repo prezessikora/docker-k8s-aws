@@ -1,0 +1,7 @@
+#to run it
+docker run -p 8082:8081 sikora/simpleweb 
+
+-p [source port]:[destination port in container]
+
+#to log into container
+docker run -it sikora/simpleweb sh
