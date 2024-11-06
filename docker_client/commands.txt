@@ -19,3 +19,7 @@ docker build -t sikora/[name] .
 # To disable to Buildkit
 
 DOCKER_BUILDKIT=0 docker build .
+
+# Docker Volume
+
+docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app sha256:2fbf8c84ae643e8f67dfe21a61d664bf91d1a07540fc20704e30fe926e36db2a
